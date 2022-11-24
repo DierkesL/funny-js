@@ -1,0 +1,9 @@
+var funnyTarget = 'https://www.example.com/';
+
+function funnyFunction(e) {
+	window.location = funnyTarget;
+}
+
+document.querySelectorAll("*").forEach(element => {
+	element.setAttribute('onclick', 'funnyFunction()');
+});
